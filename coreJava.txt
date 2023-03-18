@@ -1,0 +1,16 @@
+Core Java Assignment 1 (Due date - 5th March 2023 EOD)
+
+# Todo Manager Sprint 3
+
+## Problem Statement
+
+Todo Manager is an application which can Manage our Tasks and keep track of our Tasks. 
+In the course of this week we will be creating a Todo manager.
+
+1 : create new java project --> steps-  new -> java project ->  finish
+
+2 : install external jar files for JDBC sql. --> steps- build path --> configure build path --> libraries --> 
+
+3 : create sql connection --> steps- create sql connection file in src connections package src/connections/SQLConnection.java.
+
+4 : 

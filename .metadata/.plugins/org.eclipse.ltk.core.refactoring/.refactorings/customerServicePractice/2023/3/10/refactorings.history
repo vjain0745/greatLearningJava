@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;connections&apos; to &apos;CoreJavaAssignment1/src&apos;&#x0D;&#x0A;- Original project: &apos;customerServicePractice&apos;&#x0D;&#x0A;- Destination element: &apos;CoreJavaAssignment1/src&apos;&#x0D;&#x0A;- Original element: &apos;customerServicePractice/src/connections&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=CoreJavaAssignment1/src" element1="/src&lt;connections" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1678036760970" version="1.0"/>
+</session>

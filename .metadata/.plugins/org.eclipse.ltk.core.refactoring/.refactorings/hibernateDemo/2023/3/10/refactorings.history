@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Author.java&apos; to &apos;HibernateCodingChallenge/src/main/java/com.gl.HibernateCodingChallenge.entity&apos;&#x0D;&#x0A;- Original project: &apos;HibernateDemo&apos;&#x0D;&#x0A;- Destination element: &apos;HibernateCodingChallenge/src/main/java/com.gl.HibernateCodingChallenge.entity&apos;&#x0D;&#x0A;- Original element: &apos;com.gl.HibernateDemo.entity.Author.java&apos;" description="Copy compilation unit" destination="=HibernateCodingChallenge/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gl.HibernateCodingChallenge.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gl.HibernateDemo.entity{Author.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1678129674284" units="1" version="1.0"/>
+</session>

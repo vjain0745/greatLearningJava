@@ -1,0 +1,85 @@
+Create a new maven project
+
+-> filter -- org.apache.maven.archetypes -- select with quickstart
+-> Group id -- com.gl
+-> Artifact id -- any name (hibernateDemo)
+Finish
+
+Add 2 dependencies for JDBC and sql in pom.xml
+ -     <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate.orm</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>6.1.7.Final</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.28</version>
+	</dependency>
+	
+
+Add src/main/resources folder and create hibernate.cfg.xml file
+
+Copy all configuration in hibernate.cfg.xml file related to database conf, dialect etc.
+
+Create new package (configurations) and 1 class (HibernateConfig.java) 
+
+Copy all data regarding session factory
+
+Create new package (entities) and 1 pojo class according to demand like (Teacher.java) 
+
+Add mapping in hibernate.cfg.xml --> <mapping class="com.gl.HibernateCodingChallenge.entity.Teacher"></mapping>
+
+Call sessionFactory function in App.java
+
+Create CRUD functions 
+	- Create -- session.persist(teacher);
+	- Read -- Teacher teacher = session.get(Teacher.class, tid); ::: session.load(Teacher.class, tid); (deprecated)
+	- Update -- Teacher updatedTeacher = session.merge(teacher);
+	- Delete -- session.remove(teacher);
+
+COMMON ANNOTATIONS
+
+	// table
+	@Entity
+	@Table(name = "student")
+
+	// column
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "studentId")
+
+One to One mapping
+		
+	// Unidirectional
+	@OneToOne
+	@JoinColumn(name = "addressId") // name of key in student table 
+
+	// bidirectional (in other entity)
+	@OneToOne(mappedBy = "address") // if you dont want address to have student as foreign key
+	
+
+	if you use joincolumn then it will create a column in same table with custom name.
+
+One to Many mapping
+		
+	// Unidirectional
+	@OneToMany
+	@JoinColumn(name = "addressId") // name of key in address table 
+	
+	if you use joincolumn then it will create a column in other table with custom name. And if you dont use 
+	joincolumn then it will create a 3rd table.
+
+	To fetch all employees and their corresponding addresses use (@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER))
+	
+
+	// bidirectional
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "student")   --> student entity
+
+	@ManyToOne --> address entity
+	@JoinColumn(name = "stuId")
+
+	You cannot use mappedby and joincolumn in same entity
+	

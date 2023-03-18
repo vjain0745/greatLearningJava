@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;connections.Connection&apos; to &apos;SqlConnection&apos;&#x0D;&#x0A;- Original project: &apos;customerServicePractice&apos;&#x0D;&#x0A;- Original element: &apos;connections.Connection&apos;&#x0D;&#x0A;- Renamed element: &apos;connections.SqlConnection&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Connection&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;connections{Connection.java[Connection" matchStrategy="1" name="SqlConnection" qualified="false" references="true" similarDeclarations="false" stamp="1677345983600" textual="false" version="1.0"/>
+</session>
