@@ -83,3 +83,4 @@ One to Many mapping
 
 	You cannot use mappedby and joincolumn in same entity
 	
+

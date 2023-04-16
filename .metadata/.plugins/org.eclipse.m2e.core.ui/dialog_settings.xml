@@ -28,14 +28,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.gl.hibernateInterview"/>
+			<item value="com.gl.springMVCAssignment"/>
 			<item value="com.springg.springDemo"/>
 			<item value="com.gl.HibernateCodingChallenge"/>
 		</list>
 		<list key="groupId">
-			<item value="com.springg"/>
 			<item value="com.gl"/>
+			<item value="com.springg"/>
 		</list>
 		<list key="artifactId">
+			<item value="hibernateInterview"/>
+			<item value="springMVCAssignment"/>
 			<item value="springDemo"/>
 			<item value="HibernateCodingChallenge"/>
 		</list>
